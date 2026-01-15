@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "system_type",
+      "entities",
+      "relations",
+      "uncertainty_elements",
+      "constraints",
+      "admissible_evidence"
+    ],
+    "properties": {
+      "system_type": {
+        "type": "string",
+        "description": "Abstract system class (e.g. network, queueing, dynamical system)"
+      },
+      "entities": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "relations": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "uncertainty_elements": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "constraints": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "admissible_evidence": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "What forms of observation would count as evidence, without proposing how to obtain them"
+      }
+    }
+  }
+  

@@ -1,0 +1,29 @@
+{
+    "system_type": "networked dynamical system",
+    "entities": [
+      "agents",
+      "information items",
+      "social connections"
+    ],
+    "relations": [
+      "information items propagate along social connections",
+      "agents allocate finite attention to information",
+      "trust modulates transmission likelihood"
+    ],
+    "uncertainty_elements": [
+      "heterogeneous trust levels",
+      "stochastic timing of exposure",
+      "variable attention decay"
+    ],
+    "constraints": [
+      "partial observability of the network",
+      "finite temporal observation window",
+      "limited behavioral signals"
+    ],
+    "admissible_evidence": [
+      "observed propagation trajectories over time",
+      "measured engagement decay patterns",
+      "network structural descriptors"
+    ]
+  }
+  
