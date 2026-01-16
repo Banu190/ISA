@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ethical Considerations",
+    "type": "object",
+    "properties": {
+      "privacy": {
+        "type": "string",
+        "enum": ["low", "medium", "high"],
+        "description": "Level of privacy risk"
+      },
+      "bias": {
+        "type": "string",
+        "enum": ["low", "medium", "high"],
+        "description": "Potential for algorithmic bias"
+      },
+      "transparency": {
+        "type": "string",
+        "enum": ["low", "medium", "high"],
+        "description": "Level of explainability and transparency"
+      },
+      "harm_potential": {
+        "type": "string",
+        "enum": ["low", "medium", "high"],
+        "description": "Potential for harm if misused"
+      }
+    },
+    "required": ["privacy", "bias", "transparency", "harm_potential"]
+  }
+  
