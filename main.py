@@ -23,13 +23,13 @@ ethical_data = {
 # Validate blueprint
 try:
     validate(instance=blueprint, schema=blueprint_schema)
-    print("Blueprint is valid ✅")
+    print("Blueprint is valid ")
 except ValidationError as e:
-    print("Blueprint validation error ❌", e)
+    print("Blueprint validation error ", e)
 
 # Validate ethical JSON
 try:
     validate(instance=ethical_data, schema=ethical_schema)
-    print("Ethical JSON is valid ✅")
+    print("Ethical JSON is valid ")
 except ValidationError as e:
-    print("Ethical JSON validation error ❌", e)
+    print("Ethical JSON validation error ", e)
